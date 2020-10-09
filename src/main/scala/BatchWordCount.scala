@@ -9,7 +9,7 @@ object BatchWordCount{
     val env: ExecutionEnvironment = ExecutionEnvironment.getExecutionEnvironment
 
     // read data
-    val inputPath: String = "D:\\com.flinkTest.scala\\src\\main\\resources\\chat.txt"
+    val inputPath: String = "/Users/shuchen/IdeaProjects/FlinkDemo/src/main/resources/chat.txt"
     val inputDataSet: DataSet[String] = env.readTextFile(inputPath)
 
     // divide words and do count
